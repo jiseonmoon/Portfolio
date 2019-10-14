@@ -1,11 +1,11 @@
 function newInput() {
     $('.command:last').after('<div class="command">');
-    $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
+    $('.command:last').append('<b>Jiseon@mjs.com</b>:~$ ').append('<input type="text" class="terminalipnut">');
 }
 $(document).ready(function () {
     $('#terminalModal').on('shown.bs.modal', function () {
         $('.modal-body').append('<div class="command">');
-        $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
+        $('.command:last').append('<b>Jiseon@mjs.com</b>:~$ ').append('<input type="text" class="terminalipnut">');
         $('.terminalipnut').focus();
     });
 
@@ -30,19 +30,19 @@ $(document).ready(function () {
             var input = $(this).val();
             $('.command:last').append(input);
             if (input == 'help') {
-                $('.command:last').append("<p>yearang, jiseon, jiyeon, kyeong jin terminal, version 1.0.0")
+                $('.command:last').append("<p>Terminal, version 1.0.0")
                     .append('<br>help - show all commands<br>')
-                    .append('whoami - show information about yearang<br>')
+                    .append('who are you - show information about Jiseon<br>')
                     .append('date - show current time<br>')
                     .append('to [page] - move to page<br>')
                     .append('exit - close terminal</p>');
-            } else if (input == 'whoami') {
-                $('.command:last').append("<p>Yong Ji Yeon")
-                .append('<br>Best Developer[Jounior]')
-                .append('<br>1995.02.05')
-                .append('<br>Seoul')
-                .append('<br>010-1234-5555')
-                .append('<br>yjy@naver.com');
+            } else if (input == 'who are you') {
+                $('.command:last').append("<p>Name:Jiseon Moon")
+                .append('Occupation:Web Developer<br>')
+                .append('Date of birth:1995.10.18<br>')
+                .append('Province:Gyeonggi<br>')
+                .append('Phone number:010-9461-8192<br>')
+                .append('Email:mjs8192@naver.com</p>');
             } else if (input == 'date') {
                 var date = new Date();
                 $('.command:last').append('<p>' + date + '</p>');
@@ -51,7 +51,7 @@ $(document).ready(function () {
                 $('.close').trigger('click');
                 return;
             } else if (input.substring(0, 2) == 'to') {
-                var to = input.substring(2, );
+                var to = input.substring(2);
                 to = $.trim(to).toLowerCase();
                 console.log(to);
                 var url = '';
