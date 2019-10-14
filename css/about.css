@@ -1,11 +1,7 @@
 #wrap {
     color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#profile {
-    height: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #education li {
@@ -30,15 +26,6 @@
 #profile_talk {
     margin-left: 40px;
     margin-top: 40px;
-}
-
-#text_talk{
-    margin-top: 20px;
-    padding-bottom: 4px;
-}
-
-#insert{
-    padding: 4px 30px;
 }
 
 h1 {
@@ -200,14 +187,16 @@ h3 {
 
 @media(max-width: 800px) {
 
-    #divleft, #divright{
+    #divleft,
+    #divright {
         width: 100%;
     }
+
     #profile_text {
         margin-top: 200px;
     }
 
-    #profile_talk{
+    #profile_talk {
         margin-left: 10px;
         margin-bottom: 60px;
     }
@@ -262,4 +251,9 @@ h3 {
         left: 50%;
         margin-left: 0;
     }
+}
+
+ul#profile_ {
+    display: flex;
+    flex-direction: column;
 }
