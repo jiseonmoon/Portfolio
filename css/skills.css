@@ -1,9 +1,11 @@
 #wrap {
     padding: 0 10%;
 }
+
 h1 {
     width: 70%
 }
+
 #icon {
     float: left;
     width: 55%;
@@ -42,22 +44,26 @@ h1 {
 .skillGraphSubTitle {
     margin: 15px;
 }
+
 .etcimg {
     margin-right: 3%;
-    width: 30%;
+    width: 35%;
     float: left;
 }
+
 .etcimg h3 {
     width: 100px;
     text-align: center;
     font-size: 20px;
 }
+
 #etcicon {
     margin: 0 15px;
     display: inline-block;
     height: 130px;
     width: 100%;
 }
+
 .etc_icon {
     height: 100px;
     width: 100px;
@@ -74,15 +80,18 @@ h1 {
     top: 18px;
     margin: 23px;
 }
+
 .etc_graph {
     margin-top: 30px;
     padding-top: 20px;
 }
+
 input {
     position: relative;
     right: 160px;
     top: 20px;
 }
+
 .etcgraphpart {
     clear: both;
 }
@@ -125,11 +134,13 @@ input {
         top: 10px;
         margin: 18px;
     }
+
     .etcimg h3 {
         width: 100px;
         text-align: center;
         font-size: 20px;
     }
+
     #icon {}
 
     #icon div {
@@ -157,17 +168,24 @@ input {
         width: 100px;
         margin-bottom: 10px;
     }
+
     input {
         position: inherit;
     }
+
     .etc_icon {
-    height: 70px;
-    width: 70px;
-    margin-bottom: 10px;
-}
-.etcimg h3 {
-    width: 80px;
-    text-align: center;
-    font-size: 14px;
-}
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .etcimg h3 {
+        width: 80px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .etc_graph {
+        height: 300px;
+    }
 }

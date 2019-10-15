@@ -14,6 +14,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame2, 10);
     var width2 = 1;
+
     function frame2() {
         if (width2 >= 85) {
             clearInterval($('#graph2'))
@@ -24,6 +25,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame3, 10);
     var width3 = 1;
+
     function frame3() {
         if (width3 >= 70) {
             clearInterval($('#graph3'))
@@ -34,6 +36,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame4, 10);
     var width4 = 1;
+
     function frame4() {
         if (width4 >= 85) {
             clearInterval($('#graph4'))
@@ -44,6 +47,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame5, 10);
     var width5 = 1;
+
     function frame5() {
         if (width5 >= 80) {
             clearInterval($('#graph5'))
@@ -54,6 +58,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame6, 10);
     var width6 = 1;
+
     function frame6() {
         if (width6 >= 90) {
             clearInterval($('#graph6'))
@@ -64,6 +69,7 @@ $(document).ready(function () {
     }
     var id = setInterval(frame7, 10);
     var width7 = 1;
+
     function frame7() {
         if (width7 >= 75) {
             clearInterval($('#graph7'))
@@ -91,12 +97,6 @@ $(document).ready(function () {
             per.push(90);
         } else if (i == 6) {
             per.push(75);
-        } else if (i == 7) {
-            per.push(65);
-        } else if (i == 8) {
-            per.push(70);
-        } else if (i == 9) {
-            per.push(50);
         }
         $('.progress-bar').eq(i).on('mouseover', function () {
             $('.progress-bar').eq(i).append(per[i]);
@@ -107,8 +107,8 @@ $(document).ready(function () {
     }
 
     //skill icon animation
-    $('img.etc_icon').on('mouseover', function() {
-         if ($(this).width() >= 80) {
+    $('img.etc_icon').on('mouseover', function () {
+        if ($(this).width() >= 80) {
             $(this).animate({
                 width: '95px',
                 height: '95px'
@@ -157,37 +157,5 @@ $(document).ready(function () {
 
     $('input').on('click', function () {
         $('.etc_graph').fadeToggle();
-        var width8 = 1;
-        var id = setInterval(frame8, 10);
-
-        function frame8() {
-            if (width8 >= 65) {
-                clearInterval($('#graph8'))
-            } else {
-                width8++;
-                $('#graph8').css('width', width8 + '%');
-            }
-        }
-        var id = setInterval(frame9, 10);
-        var width9 = 1;
-        function frame9() {
-            if (width9 >= 70) {
-                clearInterval($('#graph9'))
-            } else {
-                width9++;
-                $('#graph9').css('width', width9 + '%');
-            }
-        }
-        var id = setInterval(frame10, 10);
-        var width10 = 1;
-        function frame10() {
-            if (width10 >= 50) {
-                clearInterval($('#graph10'))
-            } else {
-                width10++;
-                $('#graph10').css('width', width10 + '%');
-            }
-        }
-
     });
 });
