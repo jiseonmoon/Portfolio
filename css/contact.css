@@ -1,5 +1,5 @@
 #map {
-    height: 515px;
+    height: 393px;
     width: 100%;
 }
 
@@ -22,6 +22,7 @@
     background-color: whitesmoke;
     padding: 3%;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 #name {
@@ -69,17 +70,9 @@
     height: 90%;
 }
 
-.navul {
-    list-style: none;
-}
-
-.navul li {
-    display: inline;
-}
-
-.navul a img {
-    width: 16%;
-    height: 16%;
+.information a img {
+    width: 30%;
+    height: 30%;
     margin-left: 3%;
     margin-right: 3%;
 }

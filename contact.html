@@ -14,13 +14,6 @@
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
-            $(':button').click(function() {
-                $('form').each(function() {
-                    this.reset();
-                });
-                $('#salaryvalue').html('0');
-                alert('Thank you!');
-            });
         });
     </script>
 </head>
@@ -32,7 +25,7 @@
     <div id="wrapper">
         <div id="left">
             <h1>Contact</h1>
-            <form>
+            <form action="https://formspree.io/mjs8192@naver.com" method="POST">
                 <label for="name">Name</label>
                 <br>
                 <input type="text" id="name" name="name">
@@ -60,25 +53,17 @@
                     <input type="range" id="salary" name="salary" value="0" min="0" max="5000" step="100" oninput="document.getElementById('salaryvalue').innerHTML=this.value;">
                 </div>
                 <br>
-                <button type="button" class="btn btn-primary">Send</button>
+                <div style="display: flex; justify-content: center;">
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </div>
             </form>
         </div>
         <div id="right">
             <nav>
-                <ul class="navul">
-                    <li>
-                        <a href="https://www.google.com"><img src="img/contact/googleplus.png" alt="email"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com"><img src="img/contact/facebook.png" alt="facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com"><img src="img/contact/instagram.png" alt="instagram"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com"><img src="img/contact/twitter.png" alt="twitter"></a>
-                    </li>
-                </ul>
+                <div class="information">
+                    <a href="https://github.com/jiseonmoon" style="display: flex; justify-content: center;"><img src="img/contact/GitHub.png" alt="GitHub"></a>
+                    <h5 style="text-align: center;">mjs8192@naver.com</h5>
+                </div>
             </nav>
             <div id="map"></div>
         </div>
@@ -88,8 +73,8 @@
     <script>
         var mapContainer = document.getElementById('map'),
             mapOption = {
-                center: new daum.maps.LatLng(37.570440, 126.985326),
-                level: 1
+                center: new daum.maps.LatLng(37.6944179, 126.7236119),
+                level: 10
             };
 
         var map = new daum.maps.Map(mapContainer, mapOption);
@@ -101,7 +86,7 @@
             };
 
         var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
-            markerPosition = new daum.maps.LatLng(37.570440, 126.985326);
+            markerPosition = new daum.maps.LatLng(37.6944179, 126.7236119);
 
         var marker = new daum.maps.Marker({
             position: markerPosition,
@@ -110,4 +95,6 @@
 
         marker.setMap(map);
     </script>
-</body></html>
+</body>
+
+</html>
