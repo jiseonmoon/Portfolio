@@ -5,7 +5,7 @@ $(document).ready(function () {
     var id = setInterval(frame1, 10);
 
     function frame1() {
-        if (width1 >= 85) {
+        if (width1 >= 75) {
             clearInterval($('#graph1'))
         } else {
             width1++;
@@ -15,7 +15,7 @@ $(document).ready(function () {
     var id = setInterval(frame2, 10);
     var width2 = 1;
     function frame2() {
-        if (width2 >= 97) {
+        if (width2 >= 85) {
             clearInterval($('#graph2'))
         } else {
             width2++;
@@ -25,7 +25,7 @@ $(document).ready(function () {
     var id = setInterval(frame3, 10);
     var width3 = 1;
     function frame3() {
-        if (width3 >= 95) {
+        if (width3 >= 70) {
             clearInterval($('#graph3'))
         } else {
             width3++;
@@ -45,7 +45,7 @@ $(document).ready(function () {
     var id = setInterval(frame5, 10);
     var width5 = 1;
     function frame5() {
-        if (width5 >= 90) {
+        if (width5 >= 80) {
             clearInterval($('#graph5'))
         } else {
             width5++;
@@ -55,7 +55,7 @@ $(document).ready(function () {
     var id = setInterval(frame6, 10);
     var width6 = 1;
     function frame6() {
-        if (width6 >= 80) {
+        if (width6 >= 90) {
             clearInterval($('#graph6'))
         } else {
             width6++;
@@ -65,7 +65,7 @@ $(document).ready(function () {
     var id = setInterval(frame7, 10);
     var width7 = 1;
     function frame7() {
-        if (width7 >= 80) {
+        if (width7 >= 75) {
             clearInterval($('#graph7'))
         } else {
             width7++;
@@ -78,19 +78,19 @@ $(document).ready(function () {
     var per = [];
     for (let i = 0; i < $('.progress-bar').length; i++) {
         if (i == 0) {
-            per.push(85);
+            per.push(75);
         } else if (i == 1) {
-            per.push(97);
+            per.push(85);
         } else if (i == 2) {
-            per.push(95);
+            per.push(70);
         } else if (i == 3) {
             per.push(85);
         } else if (i == 4) {
-            per.push(90);
+            per.push(80);
         } else if (i == 5) {
-            per.push(80);
+            per.push(90);
         } else if (i == 6) {
-            per.push(80);
+            per.push(75);
         } else if (i == 7) {
             per.push(65);
         } else if (i == 8) {
